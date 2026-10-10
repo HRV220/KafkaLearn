@@ -2,7 +2,7 @@ using Confluent.Kafka;
 
 var builder = WebApplication.CreateBuilder(args);
 
-string[] customers = ["alice", "bob", "carol"];
+string[] customers = ["amine", "richard", "carl"];
 builder.Services.AddSingleton<IProducer<string, string>>(_ =>
 {
     var config = new ProducerConfig
